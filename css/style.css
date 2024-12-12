@@ -35,8 +35,8 @@ header{
     width: 100px;
 }
 footer img{
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
     /* display: flex; */
     margin-left: 20px;
     margin-right: 20px;
@@ -313,6 +313,13 @@ section.reviews .dots li.slick-active button{
 section.work{
     background:var(--light);
 }
+
+section.work .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 section.work .card-wrapper{
     display:grid;
     grid-template-columns:repeat(3,1fr);
@@ -408,14 +415,16 @@ section.blog .card-wrapper .card .card-content a.read-more{
 
 section.contact .card-wrapper{
     display:grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
     grid-gap:3rem;
 }
 section.contact .card-wrapper .card{
     text-align: center;
 }
 section.contact .card-wrapper .card img{
-    margin-bottom: 3rem;
+    height: 50px;
+    width: 50px;
+    margin-bottom: 1rem;
 }
 section.contact .card-wrapper .card h1{
     font-weight:400;
