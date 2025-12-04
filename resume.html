@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Resume - MD. Hasibul Hossain</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        .resume-container {
+            min-height: 100vh;
+            background: linear-gradient(to bottom, #1a1a2e 0%, #16213e 100%);
+            padding: 2rem 0;
+        }
+
+        .resume-header {
+            text-align: center;
+            padding: 2rem 0;
+            color: white;
+        }
+
+        .resume-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .resume-header h1 span {
+            color: #00d9ff;
+        }
+
+        .resume-header p {
+            color: #a0a0a0;
+            font-size: 1.1rem;
+        }
+
+        .pdf-viewer-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .pdf-viewer {
+            width: 100%;
+            height: 140vh;
+            border: 3px solid #00d9ff;
+            border-radius: 10px;
+            background: white;
+            box-shadow: 0 10px 40px rgba(0, 217, 255, 0.3);
+        }
+
+        .action-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            padding: 2rem 0;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-download {
+            background: linear-gradient(135deg, #00d9ff 0%, #0099cc 100%);
+            color: white;
+        }
+
+        .btn-download:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 217, 255, 0.4);
+        }
+
+        .btn-contact {
+            background: transparent;
+            color: #00d9ff;
+            border: 2px solid #00d9ff;
+        }
+
+        .btn-contact:hover {
+            background: #00d9ff;
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 217, 255, 0.3);
+        }
+
+        .btn-back {
+            background: linear-gradient(135deg, #6c63ff 0%, #5a52d5 100%);
+            color: white;
+        }
+
+        .btn-back:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(108, 99, 255, 0.4);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .resume-header h1 {
+                font-size: 1.8rem;
+            }
+
+            .pdf-viewer {
+                height: 70vh;
+            }
+
+            .action-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 80%;
+                justify-content: center;
+            }
+        }
+
+        /* PDF fallback message */
+        .pdf-fallback {
+            text-align: center;
+            padding: 3rem;
+            color: white;
+        }
+
+        .pdf-fallback a {
+            color: #00d9ff;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="resume-container">
+        <div class="resume-header">
+            <h1>My <span>Resume</span></h1>
+            <p>MD. Hasibul Hossain - Flutter Developer</p>
+        </div>
+
+        <div class="pdf-viewer-wrapper">
+            <object class="pdf-viewer" data="./assets/MD Hasibul Hossain (Flutter Dev.).pdf" type="application/pdf"
+                aria-label="Resume PDF">
+                <iframe class="pdf-viewer" src="./assets/MD Hasibul Hossain (Flutter Dev.).pdf" title="Resume PDF">
+                    <div class="pdf-fallback">
+                        <p>Your browser doesn't support PDF viewing.</p>
+                        <p>Please <a href="./assets/MD Hasibul Hossain (Flutter Dev.).pdf" download>download the PDF</a>
+                            to view it.</p>
+                    </div>
+                </iframe>
+            </object>
+        </div>
+
+        <div class="action-buttons">
+            <a href="./assets/MD Hasibul Hossain (Flutter Dev.).pdf" download class="btn btn-download">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                    <path
+                        d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                    <path
+                        d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                </svg>
+                Download Resume
+            </a>
+            <a href="index.html#contact" class="btn btn-contact">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                    <path
+                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                </svg>
+                Contact Me
+            </a>
+            <a href="index.html" class="btn btn-back">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                </svg>
+                Back to Portfolio
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
