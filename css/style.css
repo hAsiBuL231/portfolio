@@ -682,6 +682,48 @@ section.work.android-projects .container {
     }
 }
 
+/* Clickable Project Card Link */
+.project-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.project-card-link:hover .project-title {
+    color: var(--primary-light);
+}
+
+/* View Details Button */
+.btn-view-details {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: transparent;
+    color: var(--primary-light);
+    font-weight: 600;
+    font-size: 0.9rem;
+    border-radius: var(--radius-full);
+    border: 2px solid var(--primary);
+    transition: all var(--transition-base) var(--ease-smooth);
+}
+
+.project-card:hover .btn-view-details {
+    background: var(--gradient-primary);
+    color: var(--text-primary);
+    border-color: transparent;
+}
+
+.btn-view-details svg {
+    transition: transform var(--transition-fast) var(--ease-smooth);
+}
+
+.project-card:hover .btn-view-details svg {
+    transform: translateX(4px);
+}
+
 /* Legacy work section styles (keeping for compatibility) */
 section.work:not(.android-projects) {
     background: var(--dark);
