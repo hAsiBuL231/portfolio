@@ -146,13 +146,14 @@ footer img {
 header nav .left a {
     color: var(--text-primary);
     text-decoration: none;
-    margin-right: 2rem;
+    margin-right: 1.25rem;
     text-transform: uppercase;
-    font-size: 0.875rem;
+    font-size: 0.8rem;
     font-weight: 500;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.03em;
     position: relative;
     transition: color var(--transition-base) var(--ease-smooth);
+    white-space: nowrap;
 }
 
 header nav .left a::after {
@@ -179,7 +180,7 @@ header nav {
 }
 
 header nav .branding {
-    margin-right: 3rem;
+    margin-right: 2rem;
 }
 
 /* Hero Section */
@@ -235,6 +236,33 @@ header nav .branding {
     margin-bottom: var(--spacing-4);
     color: var(--text-secondary);
     font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+}
+
+.hero-stats {
+    display: flex;
+    gap: var(--spacing-5);
+    flex-wrap: wrap;
+    margin-bottom: var(--spacing-4);
+}
+
+.hero-stats .stat-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-stats .stat-value {
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    font-weight: 700;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-stats .stat-label {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    letter-spacing: 0.03em;
 }
 
 .hero .right {
@@ -322,6 +350,155 @@ section.about .social a img {
     padding: 0.6rem;
     position: relative;
     z-index: 1;
+}
+
+/* Experience Section */
+section.experience {
+    background: var(--dark-alt);
+}
+
+.timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    padding-left: var(--spacing-5);
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 8px;
+    bottom: 8px;
+    width: 2px;
+    background: linear-gradient(180deg, var(--primary) 0%, rgba(0, 180, 219, 0.1) 100%);
+}
+
+.timeline-item {
+    position: relative;
+    padding-bottom: var(--spacing-6);
+}
+
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: calc(-1 * var(--spacing-5) + 1px);
+    top: 6px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--gradient-primary);
+    box-shadow: 0 0 0 4px var(--dark-alt), 0 0 12px rgba(0, 180, 219, 0.6);
+}
+
+.timeline-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: var(--spacing-2);
+    margin-bottom: var(--spacing-1);
+}
+
+.timeline-role {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.timeline-role small {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--text-secondary);
+}
+
+.timeline-date {
+    font-size: 0.85rem;
+    color: var(--primary-light);
+    white-space: nowrap;
+}
+
+.timeline-company {
+    color: var(--text-secondary);
+    font-weight: 500;
+    margin-bottom: var(--spacing-2);
+}
+
+.timeline-item ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-1);
+}
+
+.timeline-item li {
+    color: var(--text-secondary);
+    font-family: 'Inter', 'Lato', sans-serif;
+    line-height: 1.7;
+    padding-left: 1.2rem;
+    position: relative;
+}
+
+.timeline-item li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.65em;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--primary);
+}
+
+/* Skills Section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: var(--spacing-4);
+}
+
+.skill-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: var(--radius-3);
+    padding: var(--spacing-4);
+    transition: all var(--transition-base) var(--ease-smooth);
+}
+
+.skill-card:hover {
+    border-color: var(--primary);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-primary);
+}
+
+.skill-card h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary-light);
+    margin-bottom: var(--spacing-3);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.skill-tag {
+    background: rgba(0, 180, 219, 0.1);
+    border: 1px solid rgba(0, 180, 219, 0.25);
+    color: var(--text-primary);
+    font-size: 0.85rem;
+    padding: 0.35rem 0.85rem;
+    border-radius: var(--radius-full);
 }
 
 /* Services Section Heading */

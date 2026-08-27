@@ -24,6 +24,8 @@
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#work">Work</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -40,6 +42,8 @@
                         <div>
                             <a href="#">Home</a>
                             <a href="#about">About</a>
+                            <a href="#experience">Experience</a>
+                            <a href="#skills">Skills</a>
                             <a href="#services">Services</a>
                             <a href="#work">Work</a>
                             <a href="#contact">Contact Me</a>
@@ -61,14 +65,25 @@
                     </div>
                     <div class="right flex-1">
                         <h6>MD. Hasibul Hossain</h6>
-                        <h1>I'm a Flutter <span>Developer</span></h1>
-                        <p>Seeking opportunities to leveraging my strong
-                            foundation in computer science principles and
-                            programming skills to contribute to the
-                            development of groundbreaking software
-                            applications, while continuously expanding my
-                            knowledge and adapting to emerging industry
-                            trends.</p>
+                        <h1>Mobile Software <span>Engineer</span></h1>
+                        <p>2+ years shipping and maintaining production apps in Flutter and native Android (Java) —
+                            12 published applications with 500K+ combined downloads across the Play Store and App
+                            Store. I own the full lifecycle: requirements, architecture, implementation, testing,
+                            release, and post-release support of live products.</p>
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <span class="stat-value">2+</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">12</span>
+                                <span class="stat-label">Apps Published</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">500K+</span>
+                                <span class="stat-label">Combined Downloads</span>
+                            </div>
+                        </div>
                         <div>
                             <a href="resume.html">
                                 <button class="btn btn-secondary">VIEW RESUME</button>
@@ -87,15 +102,14 @@
                 <div class="flex-4 right">
                     <h1>About <span>Me</span></h1>
                     <h3>Hello! I’m MD. Hasibul Hossain.</h3>
-                    <p>I'm a passionate software developer and researcher with a focus on building impactful
-                        applications
-                        that blend advanced technology with real-world utility. I specialize in mobile app development
-                        using Flutter,
-                        and I have experience with backend technologies like Django Rest Framework and databases
-                        including PostgreSQL,
-                        SQLite, and MySQL. My projects range from a Women Safety App with Live Location Sharing to
-                        AidFast, a doctor appointment app
-                        with seamless UI features, efficient data handling, and customizable scheduling systems.</p>
+                    <p>I'm a Mobile Software Engineer with 2+ years shipping and maintaining production apps in
+                        Flutter and native Android (Java) — 12 published applications with 500K+ combined downloads
+                        across the Play Store and App Store. I own the full lifecycle: requirements, architecture,
+                        implementation, testing, release, and post-release support of live products.</p>
+                    <p>My work spans AI-powered mobile apps, real-time live-streaming platforms, and civic-tech
+                        systems — from OCR-driven expense tracking to sub-100ms live chat infrastructure to Amader
+                        City, a citizen-services platform I own end-to-end from BRD to backend. I also work with
+                        REST APIs, Firebase, and SQLite to build the backend services my apps run on.</p>
                     <div class="social">
                         <a href="#"><img src="./images/home.png" alt=""></a>
                         <a href="https://www.facebook.com/Mr.Rezvi"><img src="./images/facebook.png" alt=""></a>
@@ -108,35 +122,175 @@
             </div>
         </section>
 
+        <section id="experience" class="experience">
+            <div class="container">
+                <h1 class="section-heading"><span>Work</span> Experience</h1>
+                <p class="section-subtitle">A track record of shipping and owning production mobile apps</p>
+
+                <div class="timeline">
+                    <div class="timeline-item card">
+                        <div class="timeline-header">
+                            <span class="timeline-role">Software Engineer</span>
+                            <span class="timeline-date">Aug 2025 – Present</span>
+                        </div>
+                        <div class="timeline-company">Nymph Solutions Limited</div>
+                        <ul>
+                            <li>Ship AI-powered mobile apps totaling 500K+ Play Store downloads, delivering OCR,
+                                audio, and image-processing features on live production codebases.</li>
+                            <li>Launched In-App Purchase and Subscription Billing (recurring and one-time) across
+                                multiple live apps, adding a new recurring revenue stream.</li>
+                            <li>Cut feature delivery time across 3+ projects by designing a shared Flutter UI
+                                component library adopted team-wide.</li>
+                            <li>Lowered undetected production crashes by instrumenting Firebase Crashlytics,
+                                Analytics, and Remote Config across live apps.</li>
+                            <li>Raised team code quality by defining pull-request review standards and contributing
+                                to architecture decisions.</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-item card">
+                        <div class="timeline-header">
+                            <span class="timeline-role">Mobile App Developer</span>
+                            <span class="timeline-date">Apr 2025 – Jul 2025</span>
+                        </div>
+                        <div class="timeline-company">BGCStudio</div>
+                        <ul>
+                            <li>Extended 4 live-streaming Flutter apps (5,000 users, 800 DAU) with real-time
+                                audio/video, live chat, and engagement features — zero disruption to live users.</li>
+                            <li>Achieved sub-100ms message latency by integrating WebSockets (Socket.IO) with
+                                automatic connection recovery for concurrent streaming sessions.</li>
+                            <li>Enabled parallel feature development across all 4 apps by implementing modular BLoC
+                                architecture with Dependency Injection over shared streaming infrastructure.</li>
+                            <li>Reduced frame drops on mid-range Android devices by profiling and optimizing
+                                rendering during peak concurrent streams.</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-item card">
+                        <div class="timeline-header">
+                            <span class="timeline-role">Flutter Developer <small>(Part-time, alongside B.Sc.)</small></span>
+                            <span class="timeline-date">May 2024 – Mar 2025</span>
+                        </div>
+                        <div class="timeline-company">AidFast</div>
+                        <ul>
+                            <li>Owned all mobile development for AidFast — BD Health Providers (rated 5.0, 5K+
+                                downloads), a live healthcare platform connecting patients with doctors, ambulances,
+                                and blood banks across Bangladesh.</li>
+                            <li>Restructured the app to Clean Architecture (data/domain/presentation) for
+                                independently testable, releasable features; shipped appointment booking, provider
+                                search, and offline support with zero downtime.</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-item card">
+                        <div class="timeline-header">
+                            <span class="timeline-role">B.Sc. (Eng.), Computer Science &amp; Engineering</span>
+                            <span class="timeline-date">Jan 2020 – May 2025</span>
+                        </div>
+                        <div class="timeline-company">Comilla University</div>
+                        <ul>
+                            <li>1000+ problems solved on Codeforces, LeetCode, and UVa — Codeforces Pupil, max
+                                rating 1369.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="container">
+                <h1 class="section-heading"><span>My</span> Skills</h1>
+                <p class="section-subtitle">The languages, frameworks, and tools behind every shipped app</p>
+
+                <div class="skills-grid">
+                    <div class="skill-card card">
+                        <h3>Languages</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Dart</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">C</span>
+                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag">SQL</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card card">
+                        <h3>Mobile</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Flutter</span>
+                            <span class="skill-tag">Android SDK</span>
+                            <span class="skill-tag">Android Studio</span>
+                            <span class="skill-tag">Native Android (Java)</span>
+                            <span class="skill-tag">iOS</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card card">
+                        <h3>Architecture</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Clean Architecture</span>
+                            <span class="skill-tag">MVVM</span>
+                            <span class="skill-tag">BLoC</span>
+                            <span class="skill-tag">SOLID Principles</span>
+                            <span class="skill-tag">Dependency Injection</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card card">
+                        <h3>Backend &amp; Data</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">REST APIs</span>
+                            <span class="skill-tag">JSON</span>
+                            <span class="skill-tag">WebSockets</span>
+                            <span class="skill-tag">Firebase</span>
+                            <span class="skill-tag">SQLite</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card card">
+                        <h3>DevOps &amp; Release</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">GitHub Actions</span>
+                            <span class="skill-tag">Play Store</span>
+                            <span class="skill-tag">App Store Connect</span>
+                            <span class="skill-tag">In-App Purchases</span>
+                            <span class="skill-tag">Subscription Billing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="services" class="services">
             <div class="container">
-                <h1 class="section-heading"><span>My </span>Services</h1>
-                <!-- <p>I provide high standard Android App for your business solutions</p> -->
-                <p> </p>
+                <h1 class="section-heading"><span>What I</span> Do</h1>
+                <p class="section-subtitle">Where my expertise translates into shipped, production work</p>
                 <div class="card-wrapper">
                     <div class="card">
                         <img src="./images/android.png" alt="">
                         <h2>Android App</h2>
-                        <p> I provide high standard android app for your business solutions. You can view my android
-                            apps on My Works section. </p>
+                        <p>Native and Flutter Android apps taken from architecture to Play Store release — see 8+
+                            shipped apps in the Projects section below.</p>
                     </div>
                     <div class="card">
                         <img src="./images/ios.png" alt="">
-                        <h2>IOS App</h2>
-                        <p> I provide high standard ios app for your business solutions. You can view my ios apps
-                            on My Works section. </p>
+                        <h2>iOS App</h2>
+                        <p>Cross-platform Flutter apps shipped to the App Store, including in-app purchases,
+                            subscription billing, and the full review process.</p>
                     </div>
                     <div class="card">
                         <img src="./images/website.png" alt="">
-                        <h2>Website</h2>
-                        <p> I provide high standard website for your business solutions. You can view my websites
-                            on My Works section. </p>
+                        <h2>Web Dashboard</h2>
+                        <p>Admin and officials' dashboards for the apps I build — role-based access, analytics, and
+                            case management, as seen in eMistry and Amader City.</p>
                     </div>
                     <div class="card">
                         <img src="./images/software.png" alt="">
                         <h2>Backend Development</h2>
-                        <p> I provide high standard backend development for your business solutions. You can view my
-                            backend development projects on My Works section. </p>
+                        <p>REST APIs, Firebase (Auth, Firestore, FCM), and SQLite-backed services powering live
+                            production apps end to end.</p>
                     </div>
                     <!-- <div class="card">
                         <img src="./images/media.svg" alt="">
