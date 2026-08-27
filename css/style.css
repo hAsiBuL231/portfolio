@@ -520,13 +520,13 @@ section.reviews .dots li.slick-active button {
     width: 24px;
 }
 
-/* Work Section - Android Projects */
-section.work.android-projects {
+/* Work Section - Projects */
+section.work.projects-section {
     background: var(--dark);
     padding-bottom: var(--spacing-7);
 }
 
-section.work.android-projects .container {
+section.work.projects-section .container {
     display: block;
     max-width: 1200px;
 }
