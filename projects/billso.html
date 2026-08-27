@@ -13,6 +13,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/project-detail.css">
+    <style>
+        .promo-videos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--spacing-5);
+            margin-top: var(--spacing-4);
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .promo-video-item {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: var(--radius-3);
+            overflow: hidden;
+        }
+
+        .promo-video-item video {
+            display: block;
+            width: 100%;
+            aspect-ratio: 9 / 16;
+            object-fit: cover;
+            background: #000;
+        }
+    </style>
 </head>
 
 <body>
@@ -140,6 +168,25 @@
                             Invoice status tracking (Paid, Pending, Overdue, Draft)
                         </li>
                     </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-screenshots">
+            <div class="container">
+                <h2 class="section-title">Promo Videos</h2>
+                <p class="section-subtitle">See Billso in action</p>
+                <div class="promo-videos-grid">
+                    <div class="promo-video-item">
+                        <video controls preload="metadata" poster="../images/projects/billso/videos/promo-1-poster.jpg">
+                            <source src="../images/projects/billso/videos/promo-1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="promo-video-item">
+                        <video controls preload="metadata" poster="../images/projects/billso/videos/promo-2-poster.jpg">
+                            <source src="../images/projects/billso/videos/promo-2.mp4" type="video/mp4">
+                        </video>
+                    </div>
                 </div>
             </div>
         </section>
