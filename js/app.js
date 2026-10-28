@@ -37,14 +37,19 @@ window.addEventListener('scroll', function() {
 // Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
+        const hash = this.getAttribute('href');
         e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
+        if (!hash || hash === '#') {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            mobileNav.classList.remove('open');
+            return;
+        }
+        const target = document.querySelector(hash);
         if (target) {
             target.scrollIntoView({
                 behavior: 'smooth',
                 block: 'start'
             });
-            // Close mobile nav if open
             mobileNav.classList.remove('open');
         }
     });
