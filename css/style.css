@@ -248,6 +248,18 @@ header nav .branding {
 .hero-stats .stat-item {
     display: flex;
     flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+}
+
+.hero-stats a.stat-item:hover .stat-label {
+    color: var(--primary-light);
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-2);
 }
 
 .hero-stats .stat-value {
